@@ -2,8 +2,8 @@ Given(/^estou na página de busca do Google$/) do
     visit "http://www.google.com.br"
   end
   
-  Given(/^digito 'cucumber'$/) do
-    fill_in("lst-ib",with:"cucumber")
+  Given(/^digito "([^"]*)"$/) do |pesquisa|
+    fill_in("lst-ib",with: pesquisa)
   end
   
   When(/^clico em busca$/) do
