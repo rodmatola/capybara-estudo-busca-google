@@ -3,11 +3,11 @@ Given(/^estou na página de busca do Google$/) do
   end
   
   Given(/^digito "([^"]*)"$/) do |pesquisa|
-    fill_in("lst-ib",with: pesquisa)
+    preenche_busca(pesquisa)
   end
   
   When(/^clico em busca$/) do
-    click_on "Pesquisa Google"
+    clica_pesquisa_google
   end
   
   Then(/^o Google me devolve os resultados$/) do
