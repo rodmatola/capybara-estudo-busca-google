@@ -1,5 +1,5 @@
 class BuscaGoogle
-    include Capybara
+    include Capybara::DSL
 
     def abrir_pagina
         visit "http://www.google.com.br"
