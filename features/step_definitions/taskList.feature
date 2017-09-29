@@ -6,4 +6,4 @@ Background:
 Scenario: Busca
     And digito "cucumber"
     When clico em busca
-    Then o Google me devolve os resultados
+    Then o Google me devolve os resultados sobre "cucumber"
